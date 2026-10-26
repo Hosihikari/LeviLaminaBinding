@@ -15,14 +15,14 @@
     <Authors>Hosihikari</Authors>
     <Description>CI-generated native-style .NET Interop for the LeviLamina LLAPI surface.</Description>
     <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/Hosihikari/Bindings.LeviLamina</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Hosihikari/LeviLaminaBinding</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>minecraft;bedrock;bds;levilamina;interop;hosihikari</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="$(AbiProjectPath)" Condition="'$(AbiProjectPath)' != ''" />
-    <ProjectReference Include="../../../Bindings.Abi/src/Hosihikari.Bindings.Abi/Hosihikari.Bindings.Abi.csproj" Condition="'$(AbiProjectPath)' == ''" />
+    <ProjectReference Include="../../../BindingAbi/src/Hosihikari.Bindings.Abi/Hosihikari.Bindings.Abi.csproj" Condition="'$(AbiProjectPath)' == ''" />
   </ItemGroup>
 
 </Project>

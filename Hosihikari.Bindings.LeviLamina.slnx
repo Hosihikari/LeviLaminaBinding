@@ -1,6 +1,5 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/Hosihikari.Bindings.LeviLamina.Interop/Hosihikari.Bindings.LeviLamina.Interop.csproj" />
-    <Project Path="src/Hosihikari.Bindings.LeviLamina/Hosihikari.Bindings.LeviLamina.csproj" />
   </Folder>
 </Solution>
