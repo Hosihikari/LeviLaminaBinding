@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh_hans.md)
 
-The LeviLamina LLAPI capability surface for the Hosihikari projection: a CI-generated native-style **Interop** and the native **binding shim**.
+The LeviLamina LLAPI interop surface for the Hosihikari projection: a CI-generated native-style **Interop** and the native **binding shim**.
 
 ## Boundary
 
@@ -49,7 +49,7 @@ The plugin validates `NativeMethods.Load`, `EventId`, `Version`, out-of-line `ll
 dotnet build Hosihikari.Bindings.LeviLamina.slnx -c Release
 ```
 
-The package version follows the upstream version plus the binding revision (`26.51.7-r0`). The platform for this surface is Windows x64.
+The package version follows the upstream version plus the binding revision (`26.51.7-r0`). The platform for this interop surface is Windows x64.
 
 ## Related repositories
 

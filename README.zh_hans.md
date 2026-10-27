@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh_hans.md)
 
-星光投影中的 LeviLamina LLAPI 能力面：CI 生成的原生风格 **Interop** 与原生 **binding shim**。
+星光投影中的 LeviLamina LLAPI 互操作面：CI 生成的原生风格 **Interop** 与原生 **绑定垫片**。
 
 ## 边界
 
