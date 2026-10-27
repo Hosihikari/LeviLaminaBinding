@@ -10,7 +10,7 @@ $ErrorActionPreference = "Stop"
 
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 if ([string]::IsNullOrWhiteSpace($GeneratorRoot)) {
-    $GeneratorRoot = (Resolve-Path (Join-Path $RepoRoot "..\Bindings.Generator")).Path
+    $GeneratorRoot = (Resolve-Path (Join-Path $RepoRoot "..\Binding.Generator")).Path
 } else {
     $GeneratorRoot = (Resolve-Path $GeneratorRoot).Path
 }

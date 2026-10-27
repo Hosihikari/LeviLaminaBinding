@@ -12,7 +12,7 @@ $ErrorActionPreference = "Stop"
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $IrDirectory = (Resolve-Path $IrDirectory).Path
 if ([string]::IsNullOrWhiteSpace($GeneratorRoot)) {
-    $GeneratorRoot = (Resolve-Path (Join-Path $RepoRoot "..\Bindings.Generator")).Path
+    $GeneratorRoot = (Resolve-Path (Join-Path $RepoRoot "..\Binding.Generator")).Path
 } else {
     $GeneratorRoot = (Resolve-Path $GeneratorRoot).Path
 }
@@ -25,7 +25,7 @@ if (-not (Test-Path $Manifest)) {
 }
 
 $AbiRoot = if ([string]::IsNullOrWhiteSpace($AbiRoot)) {
-    Join-Path (Split-Path $RepoRoot -Parent) "Bindings.Abi"
+    Join-Path (Split-Path $RepoRoot -Parent) "Binding.Abi"
 } else {
     (Resolve-Path $AbiRoot).Path
 }

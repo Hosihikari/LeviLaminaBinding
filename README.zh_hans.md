@@ -26,7 +26,7 @@ Interop 工程可构建。carrier 链接的生成 Interop、v1 绑定垫片函�
 新 IR 之后重新生成：
 
 ```shell
-powershell -File scripts/regenerate.ps1 -IrDirectory ..\Bindings.Generator\artifacts\llapi-full-ir -AbiRoot ..\Bindings.Abi
+powershell -File scripts/regenerate.ps1 -IrDirectory ..\Binding.Generator\artifacts\llapi-full-ir -AbiRoot ..\Binding.Abi
 ```
 
 ## 运行时 smoke

@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="$(AbiProjectPath)" Condition="'$(AbiProjectPath)' != ''" />
-    <ProjectReference Include="../../../BindingAbi/src/Hosihikari.Bindings.Abi/Hosihikari.Bindings.Abi.csproj" Condition="'$(AbiProjectPath)' == ''" />
+    <ProjectReference Include="../../../Binding.Abi/src/Hosihikari.Bindings.Abi/Hosihikari.Bindings.Abi.csproj" Condition="'$(AbiProjectPath)' == ''" />
   </ItemGroup>
 
 </Project>
