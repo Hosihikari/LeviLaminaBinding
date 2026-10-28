@@ -18,7 +18,7 @@ generated/
 build.ps1                                      clang-cl build against LL + fmt
 ```
 
-Generated sources are produced by `Hosihikari/BindingGenerator` with `--native-root --link-carrier` and committed here; `scripts/regenerate.ps1` and `scripts/verify_generated.py` maintain the integration.
+Generated sources are produced by `HosihikariProjection/BindingGenerator` with `--native-root --link-carrier` and committed here; `scripts/regenerate.ps1` and `scripts/verify_generated.py` maintain the integration.
 
 ## Status
 

@@ -6,14 +6,14 @@
 
 ## 边界
 
-- `Hosihikari.Bindings.LeviLamina.Interop` 由 `Hosihikari/BindingGenerator` 从版本化 IR 生成。它镜像 LLAPI 声明：一层指针与引用返回投影为类型化借用包装，`optional_ref<T>` 结果复用同一包装，其余不透明句柄保留 `nint`；提交入库并由 CI 重跑比对。
+- `Hosihikari.Bindings.LeviLamina.Interop` 由 `HosihikariProjection/BindingGenerator` 从版本化 IR 生成。它镜像 LLAPI 声明：一层指针与引用返回投影为类型化借用包装，`optional_ref<T>` 结果复用同一包装，其余不透明句柄保留 `nint`；提交入库并由 CI 重跑比对。
 - `native/BindingShim/` 是用 LeviLamina 的 xmake/LLVM 工具链编译的 C ABI 投影。它不托管 CLR；HostingShim 是独立的一层。
 
 ## 当前状态
 
 Interop 工程可构建。carrier 链接的生成 Interop、v1 绑定垫片函数表及其 `extern "C"` 实现、覆盖清单均已提交：
 
-- `src/Hosihikari.Bindings.LeviLamina.Interop/Generated/` 是生成的原生风格 C# 类与 `NativeMethods`；ABI 值类型与 shim 加载器来自 `Hosihikari/BindingAbi`。有意不支持的成员为带 `[Obsolete]` 标记的 `NotSupportedException` stub，调用时产生编译器警告 CS0618。
+- `src/Hosihikari.Bindings.LeviLamina.Interop/Generated/` 是生成的原生风格 C# 类与 `NativeMethods`；ABI 值类型与 shim 加载器来自 `HosihikariProjection/BindingAbi`。有意不支持的成员为带 `[Obsolete]` 标记的 `NotSupportedException` stub，调用时产生编译器警告 CS0618。
 - `native/BindingShim/generated/win-x64-server/levilamina/` 是 3,819 个函数的函数表与实现。
 - `coverage/` 包含覆盖清单、汇总、基线与 provenance。
 
@@ -53,8 +53,8 @@ dotnet build Hosihikari.Bindings.LeviLamina.slnx -c Release
 
 ## 相关仓库
 
-- `Hosihikari/BindingIr`：schema、模型、读写器、校验器。
-- `Hosihikari/BindingGenerator`：libTooling 前端与发射器。
+- `HosihikariProjection/BindingIr`：schema、模型、读写器、校验器。
+- `HosihikariProjection/BindingGenerator`：libTooling 前端与发射器。
 
 ## 许可证
 

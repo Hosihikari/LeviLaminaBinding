@@ -15,7 +15,7 @@
     <Authors>Hosihikari</Authors>
     <Description>CI-generated native-style .NET Interop for the LeviLamina LLAPI surface.</Description>
     <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/Hosihikari/LeviLaminaBinding</RepositoryUrl>
+    <RepositoryUrl>https://github.com/HosihikariProjection/LeviLaminaBinding</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>minecraft;bedrock;bds;levilamina;interop;hosihikari</PackageTags>
   </PropertyGroup>

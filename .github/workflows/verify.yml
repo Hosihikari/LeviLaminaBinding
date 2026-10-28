@@ -14,19 +14,19 @@ jobs:
       - name: IR contract
         uses: actions/checkout@v4
         with:
-          repository: Hosihikari/BindingIr
+          repository: HosihikariProjection/BindingIr
           path: Binding.Ir
 
       - name: Generator
         uses: actions/checkout@v4
         with:
-          repository: Hosihikari/BindingGenerator
+          repository: HosihikariProjection/BindingGenerator
           path: Binding.Generator
 
       - name: ABI contract
         uses: actions/checkout@v4
         with:
-          repository: Hosihikari/BindingAbi
+          repository: HosihikariProjection/BindingAbi
           path: Binding.Abi
 
       - uses: actions/setup-dotnet@v4
