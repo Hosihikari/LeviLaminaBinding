@@ -31,7 +31,7 @@ powershell -File scripts/regenerate.ps1 -IrDirectory ..\Binding.Generator\artifa
 
 ## Runtime smoke
 
-`scripts/run-runtime-smoke.ps1` builds the shim and Interop, installs a C# test plugin into a local BDS + LeviLamina server, and verifies the result file. It requires Windows x64, BDS 1.26.51.1, LeviLamina 26.51.7, the Hosihikari host, and `hosihikari-csharp`:
+`scripts/run-runtime-smoke.ps1` builds the shim and Interop, installs a C# test plugin into a local BDS + LeviLamina server, and verifies the result file. It requires Windows x64, BDS 1.26.51.1, LeviLamina 26.51.9, the Hosihikari host, and `hosihikari-csharp`:
 
 ```shell
 powershell -File scripts/run-runtime-smoke.ps1 -ServerRoot C:\path\to\bedrock-server
@@ -49,7 +49,7 @@ The plugin validates `NativeMethods.Load`, `EventId`, `Version`, out-of-line `ll
 dotnet build Hosihikari.Bindings.LeviLamina.slnx -c Release
 ```
 
-The package version follows the upstream version plus the binding revision (`26.51.7-r0`). The platform for this interop surface is Windows x64.
+The package version follows the upstream version plus the binding revision (`26.51.9-r0`). The platform for this interop surface is Windows x64.
 
 ## Related repositories
 

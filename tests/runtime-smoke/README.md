@@ -5,7 +5,7 @@ Loads the committed carrier-linked BindingShim inside a real BDS process and val
 ## Requirements
 
 - Windows x64.
-- BDS 1.26.51.1 with LeviLamina 26.51.7.
+- BDS 1.26.51.1 with LeviLamina 26.51.9.
 - The Hosihikari host and `hosihikari-csharp` provider in `plugins/`.
 - A local LeviLamina build with `build/windows/x64/release/LeviLamina.lib`.
 - The generated BindingShim and Interop from this repository.

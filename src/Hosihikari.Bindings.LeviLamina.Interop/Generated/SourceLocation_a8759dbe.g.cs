@@ -37,6 +37,21 @@ public sealed unsafe partial class SourceLocation : global::System.IDisposable
         return __hs_handle;
     }
 
+    public static ulong FileCapacity
+    {
+        get => NativeMethods.TablePtr->hs_get_46c1b252();
+    }
+
+    public static ulong FuncsigCapacity
+    {
+        get => NativeMethods.TablePtr->hs_get_9265b1a2();
+    }
+
+    public static ulong FunctionCapacity
+    {
+        get => NativeMethods.TablePtr->hs_get_2d462657();
+    }
+
     [global::System.Obsolete("BindingShim cannot project this member: consteval constructors cannot be called at runtime.", false)]
     public static SourceLocation Create(nint file, nint function, nint funcsig, int line, int column) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: consteval constructors cannot be called at runtime.");
