@@ -37,7 +37,7 @@ public sealed unsafe partial class PatternFormatter : global::System.IDisposable
         return __hs_handle;
     }
 
-    public static PatternFormatter Create(string pattern, bool colored, nint bracketed)
+    public static PatternFormatter Create(string pattern, bool colored, byte bracketed)
     {
         var __hs_stringByteCount0 = global::System.Text.Encoding.UTF8.GetByteCount(pattern);
         scoped global::System.Span<byte> __hs_stringBytes0;
@@ -52,7 +52,7 @@ public sealed unsafe partial class PatternFormatter : global::System.IDisposable
         global::System.Text.Encoding.UTF8.GetBytes(pattern, __hs_stringBytes0);
         fixed (byte* __hs_stringData0 = __hs_stringBytes0)
         {
-            var handle = NativeMethods.TablePtr->hs_create_103fbc3e(__hs_stringData0, (nuint)__hs_stringByteCount0, colored, (void*)bracketed);
+            var handle = NativeMethods.TablePtr->hs_create_103fbc3e(__hs_stringData0, (nuint)__hs_stringByteCount0, colored, bracketed);
             if (handle == null)
             {
                 throw new global::System.InvalidOperationException(NativeMethods.GetLastError() ?? "BindingShim create call failed.");
@@ -62,9 +62,10 @@ public sealed unsafe partial class PatternFormatter : global::System.IDisposable
         }
     }
 
-    public nint bracketed
+    public byte bracketed
     {
-        get => (nint)NativeMethods.TablePtr->hs_get_23b0f6aa((void*)_handle);
+        get => NativeMethods.TablePtr->hs_get_23b0f6aa((void*)_handle);
+        set => NativeMethods.TablePtr->hs_set_23b0f6aa((void*)_handle, value);
     }
 
     public bool colored

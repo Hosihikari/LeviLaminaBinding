@@ -37,78 +37,78 @@ public sealed partial class TypedStorageImpl_8ULL__64ULL__brstd__move_only_funct
         return __hs_handle;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public static TypedStorageImpl_8ULL__64ULL__brstd__move_only_function_std__unique_ptr_DimensionFactoryAndManag_03fe615f Create_2043d2ab(nint other) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public static TypedStorageImpl_8ULL__64ULL__brstd__move_only_function_std__unique_ptr_DimensionFactoryAndManag_03fe615f Create_cca88e0e(nint other) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint data
     {
-        get => throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
-        set => throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        get => throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
+        set => throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint get_913368df() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint get_d3b3f156() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint get_d1e9ad34() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint get_f51b341b() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_brstd__move_only_function_std__unique_ptr_DimensionFactoryAn_36a9630e() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_const_brstd__move_only_function_std__unique_ptr_DimensionFac_6a9b91af() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_multiply_e9b67097() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_multiply_d9e67057() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_multiply_24b22c9a() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_multiply_7c2db32d() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_operator___503ee879() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_operator___e3166499() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_assign_37eb5c1c(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public nint operator_assign_19b0cc64(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.", false)]
     public void Destroy() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template arguments are inaccessible or incomplete.");
 }

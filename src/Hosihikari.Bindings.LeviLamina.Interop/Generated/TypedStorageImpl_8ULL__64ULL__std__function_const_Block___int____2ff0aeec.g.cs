@@ -3,7 +3,7 @@
 
 namespace Hosihikari.Bindings.LeviLamina.Interop.ll;
 
-public sealed partial class TypedStorageImpl_8ULL__64ULL__std__function_const_Block___int___
+public sealed unsafe partial class TypedStorageImpl_8ULL__64ULL__std__function_const_Block___int___
 {
     private nint _handle;
     private readonly bool _ownsHandle;
@@ -37,78 +37,84 @@ public sealed partial class TypedStorageImpl_8ULL__64ULL__std__function_const_Bl
         return __hs_handle;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template constructor has no visible definition.", false)]
     public static TypedStorageImpl_8ULL__64ULL__std__function_const_Block___int___ Create_d9a2262e(nint other) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template constructor has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template constructor has no visible definition.", false)]
     public static TypedStorageImpl_8ULL__64ULL__std__function_const_Block___int___ Create_b618debc(nint other) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template constructor has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
     public nint data
     {
-        get => throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
-        set => throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        get => (nint)NativeMethods.TablePtr->hs_get_e2c1e179((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
     public nint get_4d37fcb9() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint get_4fab6258() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint get_4fab6258()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_4fab6258((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
     public nint get_6fa679c8() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint get_acfcf981() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint get_acfcf981()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_acfcf981((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint operator_const_std__function_const_Block___int____() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint operator_const_std__function_const_Block___int____()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_efc650fc((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint operator_std__function_const_Block___int____() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint operator_std__function_const_Block___int____()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_1e24a0f9((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
     public nint operator_multiply_321f19cf() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint operator_multiply_2cac2569() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint operator_multiply_2cac2569()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_2cac2569((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
     public nint operator_multiply_c1062423() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint operator_multiply_e1e2e519() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint operator_multiply_e1e2e519()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_e1e2e519((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint operator_operator___a6bac29b() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint operator_operator___a6bac29b()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_a6bac29b((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
-    public nint operator_operator___9e5f0889() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+    public nint operator_operator___9e5f0889()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_9e5f0889((void*)_handle);
+    }
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
     public nint operator_assign_dddf0561(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
     public nint operator_assign_ce6c594f(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: the native name is not a valid C++ qualified name.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the class has no accessible destructor.", false)]
     public void Destroy() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: the native name is not a valid C++ qualified name.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the class has no accessible destructor.");
 }
