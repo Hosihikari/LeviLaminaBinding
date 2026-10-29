@@ -1,11 +1,14 @@
 param(
     [Parameter(Mandatory = $true)]
     [string]$IrDirectory,
-    [string]$LeviLaminaRoot = "C:\Users\root\source\repos\hosihikari\LeviLamina",
+    [string]$LeviLaminaRoot = "",
     [string]$GeneratorRoot = "",
     [string]$Output = "artifacts/regenerated",
     [string]$AbiRoot = ""
 )
+if ([string]::IsNullOrWhiteSpace($LeviLaminaRoot)) {
+    $LeviLaminaRoot = Join-Path $PSScriptRoot "..\..\Third\LeviLamina"
+}
 
 $ErrorActionPreference = "Stop"
 

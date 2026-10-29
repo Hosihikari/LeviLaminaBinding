@@ -50,9 +50,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__64ULL__std__unordered_
         get => (nint)NativeMethods.TablePtr->hs_get_be342ba9((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_12465134() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public global::System.Collections.Generic.Dictionary<string, byte> get_12465134()
+    {
+        var __hs_view = NativeMethods.TablePtr->hs_method_12465134((void*)_handle);
+        var __hs_items = (global::Hosihikari.Bindings.Abi.MapEntry*)__hs_view.Data;
+        var __hs_result = new global::System.Collections.Generic.Dictionary<string, byte>(checked((int)__hs_view.Size));
+        for (var __hs_i = 0; __hs_i < checked((int)__hs_view.Size); __hs_i++)
+        {
+            var __hs_entry = __hs_items[__hs_i];
+            var __hs_key = global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8((nint)__hs_entry.Key, checked((int)__hs_entry.KeySize))!;
+            var __hs_value = unchecked((byte)__hs_entry.Value);
+            __hs_result[__hs_key] = __hs_value;
+        }
+        return __hs_result;
+    }
 
     public global::System.Collections.Generic.Dictionary<string, byte> get_1e919a1c()
     {
@@ -69,9 +80,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__64ULL__std__unordered_
         return __hs_result;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_304be7fe() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public global::System.Collections.Generic.Dictionary<string, byte> get_304be7fe()
+    {
+        var __hs_view = NativeMethods.TablePtr->hs_method_304be7fe((void*)_handle);
+        var __hs_items = (global::Hosihikari.Bindings.Abi.MapEntry*)__hs_view.Data;
+        var __hs_result = new global::System.Collections.Generic.Dictionary<string, byte>(checked((int)__hs_view.Size));
+        for (var __hs_i = 0; __hs_i < checked((int)__hs_view.Size); __hs_i++)
+        {
+            var __hs_entry = __hs_items[__hs_i];
+            var __hs_key = global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8((nint)__hs_entry.Key, checked((int)__hs_entry.KeySize))!;
+            var __hs_value = unchecked((byte)__hs_entry.Value);
+            __hs_result[__hs_key] = __hs_value;
+        }
+        return __hs_result;
+    }
 
     public global::System.Collections.Generic.Dictionary<string, byte> get_014c49ff()
     {
@@ -118,9 +140,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__64ULL__std__unordered_
         return __hs_result;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_a972834b() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public global::System.Collections.Generic.Dictionary<string, byte> operator_multiply_a972834b()
+    {
+        var __hs_view = NativeMethods.TablePtr->hs_method_a972834b((void*)_handle);
+        var __hs_items = (global::Hosihikari.Bindings.Abi.MapEntry*)__hs_view.Data;
+        var __hs_result = new global::System.Collections.Generic.Dictionary<string, byte>(checked((int)__hs_view.Size));
+        for (var __hs_i = 0; __hs_i < checked((int)__hs_view.Size); __hs_i++)
+        {
+            var __hs_entry = __hs_items[__hs_i];
+            var __hs_key = global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8((nint)__hs_entry.Key, checked((int)__hs_entry.KeySize))!;
+            var __hs_value = unchecked((byte)__hs_entry.Value);
+            __hs_result[__hs_key] = __hs_value;
+        }
+        return __hs_result;
+    }
 
     public global::System.Collections.Generic.Dictionary<string, byte> operator_multiply_54a76fd4()
     {
@@ -137,9 +170,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__64ULL__std__unordered_
         return __hs_result;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_4921328c() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public global::System.Collections.Generic.Dictionary<string, byte> operator_multiply_4921328c()
+    {
+        var __hs_view = NativeMethods.TablePtr->hs_method_4921328c((void*)_handle);
+        var __hs_items = (global::Hosihikari.Bindings.Abi.MapEntry*)__hs_view.Data;
+        var __hs_result = new global::System.Collections.Generic.Dictionary<string, byte>(checked((int)__hs_view.Size));
+        for (var __hs_i = 0; __hs_i < checked((int)__hs_view.Size); __hs_i++)
+        {
+            var __hs_entry = __hs_items[__hs_i];
+            var __hs_key = global::System.Runtime.InteropServices.Marshal.PtrToStringUTF8((nint)__hs_entry.Key, checked((int)__hs_entry.KeySize))!;
+            var __hs_value = unchecked((byte)__hs_entry.Value);
+            __hs_result[__hs_key] = __hs_value;
+        }
+        return __hs_result;
+    }
 
     public global::System.Collections.Generic.Dictionary<string, byte> operator_multiply_d2172a18()
     {
@@ -166,13 +210,13 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__64ULL__std__unordered_
         return (nint)NativeMethods.TablePtr->hs_method_76585082((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_6c296d53(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_8cf207b0(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
     [global::System.Obsolete("BindingShim cannot project this member: the class has no accessible destructor.", false)]
     public void Destroy() =>

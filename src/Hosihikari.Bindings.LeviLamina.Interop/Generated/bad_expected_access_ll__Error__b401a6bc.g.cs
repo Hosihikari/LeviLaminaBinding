@@ -41,18 +41,20 @@ public sealed unsafe partial class bad_expected_access_ll__Error_ : global::Syst
     public static bad_expected_access_ll__Error_ Create(nint e) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: constructors with mutable reference parameters are not projected.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint error_5a2a67ef() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint error_5a2a67ef()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_5a2a67ef((void*)_handle);
+    }
 
     public global::Hosihikari.Bindings.LeviLamina.Interop.ll.Error error_cd83de93()
     {
         return new global::Hosihikari.Bindings.LeviLamina.Interop.ll.Error((nint)NativeMethods.TablePtr->hs_method_cd83de93((void*)_handle), false);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint error_3eeff636() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint error_3eeff636()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_3eeff636((void*)_handle);
+    }
 
     public global::Hosihikari.Bindings.LeviLamina.Interop.ll.Error error_648678e4()
     {

@@ -51,18 +51,20 @@ public sealed unsafe partial class Optional_std__variant_int__bool__float__Dimen
         return (nint)NativeMethods.TablePtr->hs_method_da62c3dc((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_fa66ebb5() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_fa66ebb5()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_fa66ebb5((void*)_handle);
+    }
 
     public nint get_53bcfcec()
     {
         return (nint)NativeMethods.TablePtr->hs_method_53bcfcec((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_15b8f4da() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_15b8f4da()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_15b8f4da((void*)_handle);
+    }
 
     public nint get_ed9e1d4a()
     {
@@ -84,9 +86,10 @@ public sealed unsafe partial class Optional_std__variant_int__bool__float__Dimen
         return (nint)NativeMethods.TablePtr->hs_method_d1d9cc7a((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_const_std__variant_int__bool__float__DimensionType__std__bas_aa31d1ce() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_const_std__variant_int__bool__float__DimensionType__std__bas_aa31d1ce()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_aa31d1ce((void*)_handle);
+    }
 
     public nint operator_const_std__variant_int__bool__float__DimensionType__std__bas_cc0bb3a2()
     {
@@ -98,27 +101,30 @@ public sealed unsafe partial class Optional_std__variant_int__bool__float__Dimen
         return (nint)NativeMethods.TablePtr->hs_method_ac3feece((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_std__variant_int__bool__float__DimensionType__std__basic_str_6644cc5c() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_std__variant_int__bool__float__DimensionType__std__basic_str_6644cc5c()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_6644cc5c((void*)_handle);
+    }
 
     public nint operator_std__variant_int__bool__float__DimensionType__std__basic_str_a3e8cd42()
     {
         return (nint)NativeMethods.TablePtr->hs_method_a3e8cd42((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_677fec02() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_677fec02()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_677fec02((void*)_handle);
+    }
 
     public nint operator_multiply_90feb77c()
     {
         return (nint)NativeMethods.TablePtr->hs_method_90feb77c((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_7566a1fd() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_7566a1fd()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_7566a1fd((void*)_handle);
+    }
 
     public nint operator_multiply_ae9b3ead()
     {
@@ -135,40 +141,44 @@ public sealed unsafe partial class Optional_std__variant_int__bool__float__Dimen
         return (nint)NativeMethods.TablePtr->hs_method_8c2c0592((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign(nint arg0) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint value_1790e014() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint value_1790e014()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_1790e014((void*)_handle);
+    }
 
     public nint value_64dc8fdd()
     {
         return (nint)NativeMethods.TablePtr->hs_method_64dc8fdd((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint value_24f7e7fe() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint value_24f7e7fe()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_24f7e7fe((void*)_handle);
+    }
 
     public nint value_4c9f927c()
     {
         return (nint)NativeMethods.TablePtr->hs_method_4c9f927c((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint value_or_default_d03747b0() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint value_or_default_d03747b0()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_d03747b0((void*)_handle);
+    }
 
     public nint value_or_default_588e929d()
     {
         return (nint)NativeMethods.TablePtr->hs_method_588e929d((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint value_or_default_b2cb0c09() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint value_or_default_b2cb0c09()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_b2cb0c09((void*)_handle);
+    }
 
     public nint value_or_default_23195632()
     {

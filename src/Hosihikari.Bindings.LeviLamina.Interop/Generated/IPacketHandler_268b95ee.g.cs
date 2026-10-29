@@ -38,7 +38,7 @@ public sealed unsafe partial class IPacketHandler : global::System.IDisposable
     }
 
     [global::System.Obsolete("BindingShim cannot project this member: the member is not exported by the carrier.", false)]
-    public void handle(nint netId, nint callback, nint packet) =>
+    public void handle(nint netId, nint callback, nint side, nint packet) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: the member is not exported by the carrier.");
 
 

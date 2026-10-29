@@ -50,18 +50,20 @@ public sealed unsafe partial class TypedStorageImpl_4ULL__4ULL__DimensionType_
         get => (nint)NativeMethods.TablePtr->hs_get_a5d68bc3((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_ed5906da() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_ed5906da()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_ed5906da((void*)_handle);
+    }
 
     public global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType get_6d14bc14()
     {
         return new global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType((nint)NativeMethods.TablePtr->hs_method_6d14bc14((void*)_handle), false);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_04ad0684() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_04ad0684()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_04ad0684((void*)_handle);
+    }
 
     public global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType get_6cb63eaf()
     {
@@ -78,18 +80,20 @@ public sealed unsafe partial class TypedStorageImpl_4ULL__4ULL__DimensionType_
         return new global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType((nint)NativeMethods.TablePtr->hs_method_541c0591((void*)_handle), false);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_83136bff() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_83136bff()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_83136bff((void*)_handle);
+    }
 
     public global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType operator_multiply_5d4dc939()
     {
         return new global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType((nint)NativeMethods.TablePtr->hs_method_5d4dc939((void*)_handle), false);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_1e51b674() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_1e51b674()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_1e51b674((void*)_handle);
+    }
 
     public global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType operator_multiply_45c17232()
     {
@@ -108,13 +112,13 @@ public sealed unsafe partial class TypedStorageImpl_4ULL__4ULL__DimensionType_
         return __hs_handle != null ? new global::Hosihikari.Bindings.LeviLamina.Interop.DimensionType((nint)__hs_handle, false) : null;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_30f8f406(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_5d6a3702(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
     [global::System.Obsolete("BindingShim cannot project this member: the class has no accessible destructor.", false)]
     public void Destroy() =>

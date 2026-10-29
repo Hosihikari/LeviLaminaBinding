@@ -50,17 +50,17 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__8ULL__bool__CommandReg
         get => (nint)NativeMethods.TablePtr->hs_get_f822f722((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint get_391bb8c3() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
     [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint get_b856ad1a() =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const &&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint get_4823d4b1() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const &&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
     [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const &)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint get_c2d705b2() =>
@@ -74,17 +74,17 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__8ULL__bool__CommandReg
     public nint operator_bool__CommandRegistry___const____void____const_CommandRegist_72b66edc() =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const &)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint operator_multiply_d27329ff() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
     [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint operator_multiply_cc181987() =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const &&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint operator_multiply_e31e703a() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const &&)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
     [global::System.Obsolete("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const &)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.", false)]
     public nint operator_multiply_ab9b4fd1() =>
@@ -98,13 +98,13 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__8ULL__bool__CommandReg
     public nint operator_operator___29295ddb() =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: return type 'bool (CommandRegistry::*const *)(void *, const CommandRegistry::ParseToken &, const CommandOrigin &, int, std::basic_string<char> &, std::vector<std::basic_string<char>> &) const' is not supported.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_61636c86(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_39d124a9(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
 
     public void Dispose()

@@ -41,14 +41,9 @@ public sealed unsafe partial class Logger : global::System.IDisposable
     public static Logger Create(nint arg0, nint arg1) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: the constructor is not exported by the carrier.");
 
-    public ulong addSink(global::Hosihikari.Bindings.Abi.SharedHandle? sink)
+    public void clearSinks()
     {
-        return NativeMethods.TablePtr->hs_method_25fea586((void*)_handle, sink?.ToNative() ?? default(global::Hosihikari.Bindings.Abi.SharedHandleData));
-    }
-
-    public void clearSink()
-    {
-        NativeMethods.TablePtr->hs_method_b51b18ca((void*)_handle);
+        NativeMethods.TablePtr->hs_method_6bd3404d((void*)_handle);
     }
 
     public void debug(string msg)
@@ -118,10 +113,24 @@ public sealed unsafe partial class Logger : global::System.IDisposable
         return NativeMethods.TablePtr->hs_method_fc6ffbb3((void*)_handle);
     }
 
-    public global::Hosihikari.Bindings.Abi.SharedHandle? getSink(ulong index)
+    public global::Hosihikari.Bindings.Abi.SharedHandle? getSink(string name)
     {
-        var __hs_shared = NativeMethods.TablePtr->hs_method_b3caca9c((void*)_handle, index);
-        return global::Hosihikari.Bindings.Abi.SharedHandle.FromNative(__hs_shared);
+        var __hs_stringByteCount0 = global::System.Text.Encoding.UTF8.GetByteCount(name);
+        scoped global::System.Span<byte> __hs_stringBytes0;
+        if (__hs_stringByteCount0 <= 256)
+        {
+            __hs_stringBytes0 = stackalloc byte[__hs_stringByteCount0 == 0 ? 1 : __hs_stringByteCount0];
+        }
+        else
+        {
+            __hs_stringBytes0 = new byte[__hs_stringByteCount0];
+        }
+        global::System.Text.Encoding.UTF8.GetBytes(name, __hs_stringBytes0);
+        fixed (byte* __hs_stringData0 = __hs_stringBytes0)
+        {
+            var __hs_shared = NativeMethods.TablePtr->hs_method_1ed01cde((void*)_handle, __hs_stringData0, (nuint)__hs_stringByteCount0);
+            return global::Hosihikari.Bindings.Abi.SharedHandle.FromNative(__hs_shared);
+        }
     }
 
     public string getTitle()
@@ -168,6 +177,26 @@ public sealed unsafe partial class Logger : global::System.IDisposable
         }
     }
 
+    public global::Hosihikari.Bindings.Abi.SharedHandle? removeSink(string name)
+    {
+        var __hs_stringByteCount0 = global::System.Text.Encoding.UTF8.GetByteCount(name);
+        scoped global::System.Span<byte> __hs_stringBytes0;
+        if (__hs_stringByteCount0 <= 256)
+        {
+            __hs_stringBytes0 = stackalloc byte[__hs_stringByteCount0 == 0 ? 1 : __hs_stringByteCount0];
+        }
+        else
+        {
+            __hs_stringBytes0 = new byte[__hs_stringByteCount0];
+        }
+        global::System.Text.Encoding.UTF8.GetBytes(name, __hs_stringBytes0);
+        fixed (byte* __hs_stringData0 = __hs_stringBytes0)
+        {
+            var __hs_shared = NativeMethods.TablePtr->hs_method_aaa9b394((void*)_handle, __hs_stringData0, (nuint)__hs_stringByteCount0);
+            return global::Hosihikari.Bindings.Abi.SharedHandle.FromNative(__hs_shared);
+        }
+    }
+
     public void setFlushLevel(int level)
     {
         NativeMethods.TablePtr->hs_method_b4f61f94((void*)_handle, level);
@@ -182,14 +211,34 @@ public sealed unsafe partial class Logger : global::System.IDisposable
         NativeMethods.TablePtr->hs_method_71d38090((void*)_handle, level);
     }
 
+    public global::Hosihikari.Bindings.Abi.SharedHandle? setSink(string name, global::Hosihikari.Bindings.Abi.SharedHandle? sink)
+    {
+        var __hs_stringByteCount0 = global::System.Text.Encoding.UTF8.GetByteCount(name);
+        scoped global::System.Span<byte> __hs_stringBytes0;
+        if (__hs_stringByteCount0 <= 256)
+        {
+            __hs_stringBytes0 = stackalloc byte[__hs_stringByteCount0 == 0 ? 1 : __hs_stringByteCount0];
+        }
+        else
+        {
+            __hs_stringBytes0 = new byte[__hs_stringByteCount0];
+        }
+        global::System.Text.Encoding.UTF8.GetBytes(name, __hs_stringBytes0);
+        fixed (byte* __hs_stringData0 = __hs_stringBytes0)
+        {
+            var __hs_shared = NativeMethods.TablePtr->hs_method_d134f062((void*)_handle, __hs_stringData0, (nuint)__hs_stringByteCount0, sink?.ToNative() ?? default(global::Hosihikari.Bindings.Abi.SharedHandleData));
+            return global::Hosihikari.Bindings.Abi.SharedHandle.FromNative(__hs_shared);
+        }
+    }
+
     public bool shouldLog(int level)
     {
         return NativeMethods.TablePtr->hs_method_464ced3e((void*)_handle, level) != 0;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: by-value return type 'll::coro::Generator<ll::io::SinkBase &>' is not a known bindable declaration.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: by-value return type 'll::coro::Generator<std::pair<std::basic_string_view<char>, ll::io::SinkBase &>>' is not a known bindable declaration.", false)]
     public nint sinks() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: by-value return type 'll::coro::Generator<ll::io::SinkBase &>' is not a known bindable declaration.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: by-value return type 'll::coro::Generator<std::pair<std::basic_string_view<char>, ll::io::SinkBase &>>' is not a known bindable declaration.");
 
     public void trace(string msg)
     {

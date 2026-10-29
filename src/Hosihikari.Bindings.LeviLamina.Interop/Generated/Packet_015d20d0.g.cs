@@ -37,9 +37,48 @@ public sealed unsafe partial class Packet : global::System.IDisposable
         return __hs_handle;
     }
 
+    public static string CustomPacketId
+    {
+        get
+        {
+            var view = NativeMethods.TablePtr->hs_get_2870745a();
+            return global::System.Text.Encoding.UTF8.GetString(view.Data, checked((int)view.Size));
+        }
+    }
+
+    public static bool Optional
+    {
+        get => NativeMethods.TablePtr->hs_get_c28ee79b() != 0;
+    }
+
     [global::System.Obsolete("BindingShim cannot project this member: the class is abstract.", false)]
     public static Packet Create(nint priority, nint reliability, nint clientSubId, bool compress) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: the class is abstract.");
+
+    public static uint PacketVersion
+    {
+        get => NativeMethods.TablePtr->hs_get_81037768();
+    }
+
+    public static byte Side
+    {
+        get => NativeMethods.TablePtr->hs_get_dce6b8e0();
+    }
+
+    public bool canSendTo_73f4a348(nint identifier)
+    {
+        return NativeMethods.TablePtr->hs_method_73f4a348((void*)_handle, (void*)identifier) != 0;
+    }
+
+    public bool canSendTo_9975f4b5(nint player)
+    {
+        return NativeMethods.TablePtr->hs_method_9975f4b5((void*)_handle, (void*)player) != 0;
+    }
+
+    public bool canSendToServer()
+    {
+        return NativeMethods.TablePtr->hs_method_c10e1099((void*)_handle) != 0;
+    }
 
     [global::System.Obsolete("BindingShim cannot project this member: the member is not exported by the carrier.", false)]
     public nint getName() =>

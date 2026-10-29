@@ -50,18 +50,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__80ULL__std__mutex_ : g
         get => (nint)NativeMethods.TablePtr->hs_get_a6dbd15f((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_e60a47b6() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_e60a47b6()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_e60a47b6((void*)_handle);
+    }
 
     public nint get_d7b166d8()
     {
         return (nint)NativeMethods.TablePtr->hs_method_d7b166d8((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_27e47357() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_27e47357()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_27e47357((void*)_handle);
+    }
 
     public nint get_be4fd156()
     {
@@ -78,18 +80,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__80ULL__std__mutex_ : g
         return (nint)NativeMethods.TablePtr->hs_method_2c0f902d((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_701ee16a() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_701ee16a()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_701ee16a((void*)_handle);
+    }
 
     public nint operator_multiply_0ce89f8e()
     {
         return (nint)NativeMethods.TablePtr->hs_method_0ce89f8e((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_463f2164() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_463f2164()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_463f2164((void*)_handle);
+    }
 
     public nint operator_multiply_4d0a24d9()
     {
@@ -106,13 +110,13 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__80ULL__std__mutex_ : g
         return (nint)NativeMethods.TablePtr->hs_method_416d49fe((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_ef33040c(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_9b295f5a(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
 
     public void Dispose()

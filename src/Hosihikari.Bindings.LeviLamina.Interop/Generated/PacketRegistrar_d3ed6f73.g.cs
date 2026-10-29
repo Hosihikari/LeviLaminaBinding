@@ -43,10 +43,21 @@ public sealed unsafe partial class PacketRegistrar
         return __hs_handle != null ? new global::Hosihikari.Bindings.LeviLamina.Interop.ll.network.Packet((nint)__hs_handle) : null;
     }
 
-    public global::Hosihikari.Bindings.LeviLamina.Interop.ll.network.IPacketHandler? getHandler(ulong runtimeId)
+    public ulong[] getHandledPackets(byte side)
+    {
+        var __hs_view = NativeMethods.TablePtr->hs_method_118ceb1d((void*)_handle, side);
+        var __hs_result = __hs_view.Size == 0 ? global::System.Array.Empty<ulong>() : new ulong[checked((int)__hs_view.Size)];
+        if (__hs_view.Size > 0)
+        {
+            new global::System.ReadOnlySpan<ulong>(__hs_view.Data, checked((int)__hs_view.Size)).CopyTo(__hs_result);
+        }
+        return __hs_result;
+    }
+
+    public global::Hosihikari.Bindings.LeviLamina.Interop.ll.network.IPacketHandler? getHandler(ulong runtimeId, byte side)
     {
         var __hs_hasValue = false;
-        var __hs_handle = NativeMethods.TablePtr->hs_method_0ffcb439((void*)_handle, runtimeId, &__hs_hasValue);
+        var __hs_handle = NativeMethods.TablePtr->hs_method_b2afa9ba((void*)_handle, runtimeId, side, &__hs_hasValue);
         return __hs_hasValue && __hs_handle != null ? new global::Hosihikari.Bindings.LeviLamina.Interop.ll.network.IPacketHandler((nint)__hs_handle, false) : null;
     }
 
@@ -55,7 +66,11 @@ public sealed unsafe partial class PacketRegistrar
         return new global::Hosihikari.Bindings.LeviLamina.Interop.ll.network.PacketRegistrar((nint)NativeMethods.TablePtr->hs_method_5ade0854(), false);
     }
 
-    public bool registerHandler(string name, ulong id, global::Hosihikari.Bindings.LeviLamina.Interop.ll.network.IPacketHandler? handler)
+    [global::System.Obsolete("BindingShim cannot project this member: vector return type 'std::pair<unsigned long long, std::basic_string<char>>' is not supported.", false)]
+    public nint getRequiredPackets(nint side) =>
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: vector return type 'std::pair<unsigned long long, std::basic_string<char>>' is not supported.");
+
+    public bool registerHandler(string name, ulong id, global::Hosihikari.Bindings.LeviLamina.Interop.ll.network.IPacketHandler? handler, byte side, global::Hosihikari.Bindings.Abi.SharedHandle? mod)
     {
         var __hs_stringByteCount0 = global::System.Text.Encoding.UTF8.GetByteCount(name);
         scoped global::System.Span<byte> __hs_stringBytes0;
@@ -70,15 +85,25 @@ public sealed unsafe partial class PacketRegistrar
         global::System.Text.Encoding.UTF8.GetBytes(name, __hs_stringBytes0);
         fixed (byte* __hs_stringData0 = __hs_stringBytes0)
         {
-            return NativeMethods.TablePtr->hs_method_806eebd2((void*)_handle, __hs_stringData0, (nuint)__hs_stringByteCount0, id, (void*)(handler?.Handle ?? 0), handler is not null) != 0;
+            return NativeMethods.TablePtr->hs_method_1be370c9((void*)_handle, __hs_stringData0, (nuint)__hs_stringByteCount0, id, (void*)(handler?.Handle ?? 0), side, mod?.ToNative() ?? default(global::Hosihikari.Bindings.Abi.SharedHandleData), handler is not null) != 0;
         }
     }
 
     [global::System.Obsolete("BindingShim cannot project this member: callback return type 'std::unique_ptr<ll::network::Packet>' is not supported.", false)]
-    public bool registerPacket(nint name, ulong id, nint factory) =>
+    public bool registerPacket(nint name, ulong id, nint factory, nint side, bool optional, nint mod) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: callback return type 'std::unique_ptr<ll::network::Packet>' is not supported.");
 
     [global::System.Obsolete("BindingShim cannot project this member: callback return type 'std::unique_ptr<ll::network::Packet>' is not supported.", false)]
-    public bool registerPacket(nint name, ulong id, nint factory, nint handler) =>
+    public bool registerPacket(nint name, ulong id, nint factory, nint handler, nint side, bool optional, nint mod) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: callback return type 'std::unique_ptr<ll::network::Packet>' is not supported.");
+
+    public bool unregisterHandler(ulong id, byte side)
+    {
+        return NativeMethods.TablePtr->hs_method_04990f66((void*)_handle, id, side) != 0;
+    }
+
+    public bool unregisterPacket(ulong id)
+    {
+        return NativeMethods.TablePtr->hs_method_286661ab((void*)_handle, id) != 0;
+    }
 }

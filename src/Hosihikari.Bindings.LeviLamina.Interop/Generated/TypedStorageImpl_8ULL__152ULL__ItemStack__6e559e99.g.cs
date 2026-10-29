@@ -50,18 +50,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__152ULL__ItemStack_
         get => (nint)NativeMethods.TablePtr->hs_get_6783d172((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_88dffa8f() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_88dffa8f()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_88dffa8f((void*)_handle);
+    }
 
     public nint get_bcc55a84()
     {
         return (nint)NativeMethods.TablePtr->hs_method_bcc55a84((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint get_1ca65bfb() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint get_1ca65bfb()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_1ca65bfb((void*)_handle);
+    }
 
     public nint get_09cbf1bc()
     {
@@ -78,18 +80,20 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__152ULL__ItemStack_
         return (nint)NativeMethods.TablePtr->hs_method_8a92eb03((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_dfd36965() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_dfd36965()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_dfd36965((void*)_handle);
+    }
 
     public nint operator_multiply_b478aa04()
     {
         return (nint)NativeMethods.TablePtr->hs_method_b478aa04((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: rvalue-qualified members are not projected.", false)]
-    public nint operator_multiply_2f96df3d() =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: rvalue-qualified members are not projected.");
+    public nint operator_multiply_2f96df3d()
+    {
+        return (nint)NativeMethods.TablePtr->hs_method_2f96df3d((void*)_handle);
+    }
 
     public nint operator_multiply_23f68d34()
     {
@@ -106,13 +110,13 @@ public sealed unsafe partial class TypedStorageImpl_8ULL__152ULL__ItemStack_
         return (nint)NativeMethods.TablePtr->hs_method_5d8b3a6d((void*)_handle);
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_bb0fb00e(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
-    [global::System.Obsolete("BindingShim cannot project this member: assignment operators on template specializations are not projected.", false)]
+    [global::System.Obsolete("BindingShim cannot project this member: the template assignment operator has no visible definition.", false)]
     public nint operator_assign_37a824ed(nint u) =>
-        throw new global::System.NotSupportedException("BindingShim cannot project this member: assignment operators on template specializations are not projected.");
+        throw new global::System.NotSupportedException("BindingShim cannot project this member: the template assignment operator has no visible definition.");
 
     [global::System.Obsolete("BindingShim cannot project this member: the class has no accessible destructor.", false)]
     public void Destroy() =>
