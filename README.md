@@ -13,7 +13,7 @@ The LeviLamina LLAPI interop surface for the Hosihikari projection: a CI-generat
 
 The Interop project builds. The carrier-linked generated Interop, the v1 绑定垫片 table with its `extern "C"` implementations, and the coverage manifest are committed:
 
-- `src/Hosihikari.Bindings.LeviLamina.Interop/Generated/` contains the generated native-style C# classes, the C# enums of the exported enumerations with their evaluated values, and `NativeMethods`; deliberately unsupported members are `NotSupportedException` stubs marked `[Obsolete]`, so calls raise compiler warning CS0618.
+- `src/Hosihikari.Bindings.LeviLamina.Interop/Generated/` contains the generated native-style C# classes, the C# enums of the exported enumerations with their evaluated values, and `NativeMethods`; deliberately unsupported members are `NotSupportedException` stubs marked `[Obsolete]`, so calls raise compiler warning CS0618; a type with no usable member keeps its type identity and carries the same marker.
 - `native/BindingShim/generated/win-x64-server/levilamina/` contains the 4,886-function table and its implementations.
 - `coverage/` contains the coverage manifest, summary, baseline, and provenance.
 
