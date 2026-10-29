@@ -19,6 +19,8 @@ The Interop project builds. The carrier-linked generated Interop, the v1 绑定�
 
 The host calls `Hosihikari.Bindings.LeviLamina.Interop.NativeMethods.Load(path)` before using a generated wrapper. `native/BindingShim/build.ps1` builds the shim with clang-cl against `LeviLamina.lib`, fmt, and prelinked Bedrock imports.
 
+A member declared with an `&&` qualifier is called as `std::move(*self).member(...)`: the qualifier only restricts the call to rvalues, so the shim re-borrows the object it holds. Assignment operators on template specializations are projected when the specialization has a visible definition.
+
 ## Generated-source gate
 
 `scripts/verify_generated.py` checks provenance, the coverage baseline, the native table function count, the table version, and the managed table. The CI builds the solution, runs this verifier, and validates the committed coverage contract with the generator.
