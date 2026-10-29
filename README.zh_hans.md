@@ -13,11 +13,15 @@
 
 Interop 工程可构建。carrier 链接的生成 Interop、v1 绑定垫片函数表及其 `extern "C"` 实现、覆盖清单均已提交：
 
-- `src/Hosihikari.Bindings.LeviLamina.Interop/Generated/` 是生成的原生风格 C# 类与 `NativeMethods`；ABI 值类型与 shim 加载器来自 `HosihikariProjection/BindingAbi`。有意不支持的成员为带 `[Obsolete]` 标记的 `NotSupportedException` stub，调用时产生编译器警告 CS0618。
-- `native/BindingShim/generated/win-x64-server/levilamina/` 是 3,819 个函数的函数表与实现。
+- `src/Hosihikari.Bindings.LeviLamina.Interop/Generated/` 包含生成的原生风格 C# 类、带求值结果的导出枚举 C# 枚举与 `NativeMethods`；有意不支持的成员为带 `[Obsolete]` 标记的 `NotSupportedException` stub，调用时产生编译器警告 CS0618；没有可用成员的类型保留类型身份并带同一标记。
+- `native/BindingShim/generated/win-x64-server/levilamina/` 是 4,957 个函数的函数表与实现。
 - `coverage/` 包含覆盖清单、汇总、基线与 provenance。
 
 载体在使用生成的包装前调用 `Hosihikari.Bindings.LeviLamina.Interop.NativeMethods.Load(path)`。`native/BindingShim/build.ps1` 用 clang-cl 针对 `LeviLamina.lib`、fmt 与 prelink 生成的 Bedrock 导入构建 shim。
+
+命名空间级函数投影为 `Functions` 静态类，其中包含载体导出的 out-of-line 函数：`ll::service::getLevel`/`getDedicatedServer`/`getNetworkSystem`、`ll::getGameVersion`、`ll::file_utils::readFile` 与字符串/系统工具都可经导入库调用。返回与参数复用成员映射，因此 optional 引用、按值 record（例如 `ll::data::Version`）、`std::optional` 字符串与 `expected` 结果都能跨界。
+
+以 `&&` 限定的成员按 `std::move(*self).member(...)` 调用：限定词只是把调用限制在右值上，shim 会重新借用自己持有的对象。模板特化上的赋值运算符在该特化有可见定义时投影。
 
 ## 生成物门禁
 
