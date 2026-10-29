@@ -58,10 +58,7 @@ public sealed unsafe partial class function_traits_bool__const_Block____ : globa
         get => NativeMethods.TablePtr->hs_get_1cd29892() != 0;
     }
 
-    public static bool is_noexcept
-    {
-        get => NativeMethods.TablePtr->hs_get_92cef3ef() != 0;
-    }
+    public const bool is_noexcept = false;
 
     public static bool is_reference
     {

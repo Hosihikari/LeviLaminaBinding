@@ -38,17 +38,9 @@ public sealed unsafe partial class TypeList_EndTag__ByteTag__ShortTag__IntTag__I
         return __hs_handle;
     }
 
-    [global::System.Obsolete("BindingShim cannot project this member: static variable templates are not projected.", false)]
-    public static nint index
-    {
-        get => throw new global::System.NotSupportedException("BindingShim cannot project this member: static variable templates are not projected.");
-        set => throw new global::System.NotSupportedException("BindingShim cannot project this member: static variable templates are not projected.");
-    }
+    public const ulong index = 10;
 
-    public static ulong size
-    {
-        get => NativeMethods.TablePtr->hs_get_f0507311();
-    }
+    public const ulong size = 12;
 
     public void Dispose()
     {

@@ -38,10 +38,7 @@ public sealed unsafe partial class ServerClock : global::System.IDisposable
         return __hs_handle;
     }
 
-    public static bool is_steady
-    {
-        get => NativeMethods.TablePtr->hs_get_44d042e1() != 0;
-    }
+    public const bool is_steady = true;
 
     public static long now()
     {

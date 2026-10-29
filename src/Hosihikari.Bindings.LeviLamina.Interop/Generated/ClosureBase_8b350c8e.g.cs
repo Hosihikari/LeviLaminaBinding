@@ -54,10 +54,7 @@ public sealed unsafe partial class ClosureBase : global::System.IDisposable
         return (nint)NativeMethods.TablePtr->hs_method_91463dca();
     }
 
-    public static ulong jitSize
-    {
-        get => NativeMethods.TablePtr->hs_get_2a2ade4b();
-    }
+    public const ulong jitSize = 48;
 
     public nint storage
     {

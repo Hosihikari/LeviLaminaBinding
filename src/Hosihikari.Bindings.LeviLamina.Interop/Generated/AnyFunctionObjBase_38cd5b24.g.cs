@@ -38,10 +38,7 @@ public sealed unsafe partial class AnyFunctionObjBase
         return __hs_handle;
     }
 
-    public static ulong anyFnSizeNumPtrs
-    {
-        get => NativeMethods.TablePtr->hs_get_58936d41();
-    }
+    public const ulong anyFnSizeNumPtrs = 8;
 
     [global::System.Obsolete("BindingShim cannot project this member: the member is not exported by the carrier.", false)]
     public nint copy(nint to) =>
@@ -55,10 +52,7 @@ public sealed unsafe partial class AnyFunctionObjBase
     public nint move(nint to) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: the member is not exported by the carrier.");
 
-    public static ulong smallObjSize
-    {
-        get => NativeMethods.TablePtr->hs_get_230cd0a5();
-    }
+    public const ulong smallObjSize = 56;
 
     [global::System.Obsolete("BindingShim cannot project this member: the member is not exported by the carrier.", false)]
     public void tidy() =>

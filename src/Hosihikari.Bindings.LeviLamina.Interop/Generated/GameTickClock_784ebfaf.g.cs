@@ -43,10 +43,7 @@ public sealed unsafe partial class GameTickClock : global::System.IDisposable
         return NativeMethods.TablePtr->hs_method_e95faeda((void*)tick);
     }
 
-    public static bool is_steady
-    {
-        get => NativeMethods.TablePtr->hs_get_adee4377() != 0;
-    }
+    public const bool is_steady = false;
 
     public static long now()
     {

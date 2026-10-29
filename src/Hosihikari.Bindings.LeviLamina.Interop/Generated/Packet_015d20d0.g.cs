@@ -47,19 +47,13 @@ public sealed unsafe partial class Packet : global::System.IDisposable
         }
     }
 
-    public static bool Optional
-    {
-        get => NativeMethods.TablePtr->hs_get_c28ee79b() != 0;
-    }
+    public const bool Optional = false;
 
     [global::System.Obsolete("BindingShim cannot project this member: the class is abstract.", false)]
     public static Packet Create(nint priority, nint reliability, nint clientSubId, bool compress) =>
         throw new global::System.NotSupportedException("BindingShim cannot project this member: the class is abstract.");
 
-    public static uint PacketVersion
-    {
-        get => NativeMethods.TablePtr->hs_get_81037768();
-    }
+    public const uint PacketVersion = 0;
 
     public static byte Side
     {
