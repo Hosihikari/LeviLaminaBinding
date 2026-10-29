@@ -6,8 +6,50 @@ namespace Hosihikari.Bindings.LeviLamina.Interop.ll.memory;
 
 public static unsafe partial class Functions
 {
+    public static nint getDefaultAllocator()
+    {
+        return (nint)NativeMethods.TablePtr->hs_function_146d1261();
+    }
+
+    public static ulong getUsableSize(nint ptr)
+    {
+        return NativeMethods.TablePtr->hs_function_35c7eaa5((void*)ptr);
+    }
+
+    public static uint? getVtableIndex(nint virtualFunction)
+    {
+        var __hs_hasValue = false;
+        var __hs_value = NativeMethods.TablePtr->hs_function_7f154c74((void*)virtualFunction, &__hs_hasValue);
+        return __hs_hasValue ? __hs_value : (uint?)null;
+    }
+
+    public static bool hookOptions(nint target, int options, bool replace, bool suspendThreads)
+    {
+        return NativeMethods.TablePtr->hs_function_870b5cb2((void*)target, options, replace, suspendThreads) != 0;
+    }
+
+    public static void modify(nint ptr, ulong len, nint callbackInvoke, nint callbackUserData, nint callbackRelease)
+    {
+        NativeMethods.TablePtr->hs_function_ffa5fb50((void*)ptr, len, (void*)callbackInvoke, (void*)callbackUserData, (void*)callbackRelease);
+    }
+
+    public static bool shouldHookSuspendThreads()
+    {
+        return NativeMethods.TablePtr->hs_function_66cdf26a() != 0;
+    }
+
+    public static void throwMemoryException(ulong arg0)
+    {
+        NativeMethods.TablePtr->hs_function_1874baca(arg0);
+    }
+
     public static nint toFuncPtr(ulong t)
     {
         return (nint)NativeMethods.TablePtr->hs_function_fae3176c(t);
+    }
+
+    public static bool unhook(nint target, nint detour, bool suspendThreads)
+    {
+        return NativeMethods.TablePtr->hs_function_5a9c4c14((void*)target, (void*)detour, suspendThreads) != 0;
     }
 }

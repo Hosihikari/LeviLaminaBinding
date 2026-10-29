@@ -6,6 +6,12 @@ namespace Hosihikari.Bindings.LeviLamina.Interop.ll.i18n;
 
 public static unsafe partial class Functions
 {
+    public static string getDefaultLocaleCode()
+    {
+        var __hs_view = NativeMethods.TablePtr->hs_function_5a55fc8b();
+        return global::System.Text.Encoding.UTF8.GetString(__hs_view.Data, checked((int)__hs_view.Size));
+    }
+
     public static global::Hosihikari.Bindings.LeviLamina.Interop.ll.i18n.I18n getInstance()
     {
         return new global::Hosihikari.Bindings.LeviLamina.Interop.ll.i18n.I18n((nint)NativeMethods.TablePtr->hs_function_c0e55d9d(), false);

@@ -11,13 +11,15 @@ The LeviLamina LLAPI interop surface for the Hosihikari projection: a CI-generat
 
 ## Current state
 
-The Interop project builds. The carrier-linked generated Interop, the v1 绑定垫片 table with its `extern "C"` implementations, and the coverage manifest are committed:
+The Interop project builds. The carrier-linked generated Interop, the v1 binding shim table with its `extern "C"` implementations, and the coverage manifest are committed:
 
 - `src/Hosihikari.Bindings.LeviLamina.Interop/Generated/` contains the generated native-style C# classes, the C# enums of the exported enumerations with their evaluated values, and `NativeMethods`; deliberately unsupported members are `NotSupportedException` stubs marked `[Obsolete]`, so calls raise compiler warning CS0618; a type with no usable member keeps its type identity and carries the same marker.
-- `native/BindingShim/generated/win-x64-server/levilamina/` contains the 4,886-function table and its implementations.
+- `native/BindingShim/generated/win-x64-server/levilamina/` contains the 4,957-function table and its implementations.
 - `coverage/` contains the coverage manifest, summary, baseline, and provenance.
 
 The host calls `Hosihikari.Bindings.LeviLamina.Interop.NativeMethods.Load(path)` before using a generated wrapper. `native/BindingShim/build.ps1` builds the shim with clang-cl against `LeviLamina.lib`, fmt, and prelinked Bedrock imports.
+
+Namespace-level functions are projected into `Functions` static classes, including the carrier-exported out-of-line functions: `ll::service::getLevel`/`getDedicatedServer`/`getNetworkSystem`, `ll::getGameVersion`, `ll::file_utils::readFile`, and the string/sys utils are callable through the import library. Results and parameters use the member mapping, so optional references, by-value records (for example `ll::data::Version`), `std::optional` strings, and `expected` results all cross the boundary.
 
 A member declared with an `&&` qualifier is called as `std::move(*self).member(...)`: the qualifier only restricts the call to rvalues, so the shim re-borrows the object it holds. Assignment operators on template specializations are projected when the specialization has a visible definition.
 

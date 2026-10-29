@@ -30,4 +30,9 @@ public static unsafe partial class Functions
     {
         return NativeMethods.TablePtr->hs_function_124f8f48(c);
     }
+
+    public static global::Hosihikari.Bindings.LeviLamina.Interop.ll.data.detail.from_chars_result validate_identifiers(nint first, nint last)
+    {
+        return new global::Hosihikari.Bindings.LeviLamina.Interop.ll.data.detail.from_chars_result((nint)NativeMethods.TablePtr->hs_function_ac76fd0b((void*)first, (void*)last));
+    }
 }
