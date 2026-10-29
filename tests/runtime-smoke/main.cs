@@ -253,9 +253,9 @@ public sealed class ShimSmokePlugin : IPlugin
                         "hosihikari-smoke",
                         packetHandlerId,
                         IPacketHandler.Borrow(packetDirector.Target),
-                        0,
+                        3,
                         null);
-                var registeredHandler = packetRegistrar.getHandler(packetHandlerId, 0);
+                var registeredHandler = packetRegistrar.getHandler(packetHandlerId, 3);
                 log.AppendLine($"packet_handler.register={(packetRegistered && registeredHandler is not null && registeredHandler.Handle == packetDirector!.Target ? "ok" : "failed")}");
             }
 
